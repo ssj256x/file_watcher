@@ -1,0 +1,3 @@
+2020-06-20 15:43:44,075 : 11184 -- [INFO] : __main__ : move_file():18 -- Moving file : C:/Users/RIYA JAGDEV/Desktop/sort/Untitled-3.gif
+2020-06-20 15:43:44,075 : 11184 -- [INFO] : root : on_modified():556 -- Modified file: C:/Users/RIYA JAGDEV/Desktop/sort/Untitled-3.gif
+2020-06-20 15:43:44,075 : 11184 -- [INFO] : root : on_deleted():550 -- Deleted file: C:/Users/RIYA JAGDEV/Desktop/sort/Untitled-3.gif

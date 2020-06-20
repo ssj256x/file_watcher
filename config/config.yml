@@ -1,0 +1,19 @@
+config:
+  dir:
+    log_config_file: ./config/logging_config.yml
+    log_path: ./logs
+    destination_path: E:/Sanjeet/sorted-files/
+    source_path: C:/Users/RIYA JAGDEV/Desktop/sort/
+    categories: [audio, images, jars, text, videos, executable, compressed, other]
+
+  file_classification:
+    audio: [m4a, mp3, flac, mp4, wav, wma, aac]
+    images: [tif, tiff, bmp, jpg, jpeg, gif, png, eps, raw]
+    jars: [jar]
+    text: [txt, text, log, doc, docx, odt, pdf, wpd]
+    videos: [webm, mpg, mp2, mpeg, mpe, mpv, ogg, mp4, m4p, m4v, avi, wmv, mov, qt, flv, swf, avchd]
+    executable: [exe, msi, msp, bat, sh]
+    compressed: [zip, rar, 7z, tgz]
+
+  replace:
+    present:

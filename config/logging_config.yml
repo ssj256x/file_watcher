@@ -1,0 +1,33 @@
+version: 1
+disable_existing_loggers: True
+formatters:
+  simple:
+    format: '%(asctime)s : [%(levelname)s] : %(name)s : %(funcName)s():%(lineno)d -- %(message)s'
+  extended:
+    format: '%(asctime)s : %(process)d -- [%(levelname)s] : %(name)s : %(funcName)s():%(lineno)d -- %(message)s'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: extended
+    filename: logs/output.log
+    when: 'S'
+    interval: 1
+
+loggers:
+  simpleExample:
+    level: INFO
+    handlers: [console, file]
+    propagate: no
+
+root:
+  level: DEBUG
+  handlers: [console, file]
+  propagate: no
